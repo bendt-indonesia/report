@@ -1,0 +1,36 @@
+{
+  "name": "bendt/report",
+  "homepage": "https://bendt.io",
+  "license": "MIT",
+  "description": "Bendt Indonesia - Reporting System",
+  "type": "laravel",
+  "authors": [
+    {
+      "name": "Bendt Indonesia",
+      "email": "contact@bendt.io",
+      "homepage": "https://bendt.io"
+    },
+    {
+      "name": "Powered by HUPERCLOUD",
+      "email": "huperseo@gmail.com",
+      "homepage": "https://www.hupercloud.com"
+    }
+  ],
+  "require": {
+    "barryvdh/laravel-dompdf": "^0.9.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "maatwebsite/excel": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bendt\\Report\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bendt\\Report\\BendtServiceProvider"
+      ]
+    }
+  }
+}
